@@ -2,4 +2,4 @@
 
 - name: Set time zone
   community.general.timezone:
-    name: {{ potos_time_timezone }}
+    name: "{{ potos_time_timezone }}"
