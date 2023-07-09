@@ -1,9 +1,12 @@
 
-# Ansible Role - potos\_template
+# Ansible Role - potos\_time
 
-Role to use as template for new roles of Potos Linux Clients.
+This role works for me, but does not satisfy the potos acceptance rules yet:
 
-[![Test](https://github.com/projectpotos/ansible-role-potos_template/actions/workflows/test.yml/badge.svg)](https://github.com/projectpotos/ansible-role-potos_template/actions/workflows/test.yml)
+* the automated checks are currently failing
+* meta is not up to date
+
+This role sets the system wide time zone.
 
 ## Example Playbook
 
@@ -29,12 +32,7 @@ The default variables are defined in [defaults/main.yml](./defaults/main.yml):
 ```yaml
 ---
 
-# Example variable
-potos_template_example_var: 'hello world!'
-
-# List of items used for action xyz
-potos_template_example_list: []
-
+potos_time_timezone: 'Europe/Zurich'
 ```
 
 Another option is to use `ansible-doc` to read the argument specification:
